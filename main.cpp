@@ -24,3 +24,8 @@ int factorial(int n) {
         return n * factorial(n - 1);
     }
 }
+
+// Función para calcular el valor absoluto de un número
+int valorAbsoluto(int n) {
+    return abs(n);
+}
