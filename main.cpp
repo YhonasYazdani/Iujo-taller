@@ -14,6 +14,13 @@ elementos dados.
 Se debe usar funciones
 */
 
-int main(int argc, char** argv) {
-	return 0;
+// Función para calcular el factorial de un número
+int factorial(int n) {
+    if (n < 0) {
+        return -1; // No existe el factorial de un número negativo
+    } else if (n == 0) {
+        return 1; // El factorial de 0 es 1
+    } else {
+        return n * factorial(n - 1);
+    }
 }
