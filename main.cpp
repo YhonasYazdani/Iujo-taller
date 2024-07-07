@@ -29,3 +29,12 @@ int factorial(int n) {
 int valorAbsoluto(int n) {
     return abs(n);
 }
+
+// Función para calcular el promedio de una serie de elementos
+double calcularPromedio(int* elementos, int cantidad) {
+    int suma = 0;
+    for (int i = 0; i < cantidad; i++) {
+        suma += elementos[i];
+    }
+    return static_cast<double>(suma) / cantidad;
+}
